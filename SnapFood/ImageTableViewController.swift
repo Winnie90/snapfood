@@ -13,9 +13,10 @@ class ImageTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let user = User()
-        if user.exists{
-            let vc = LoginViewController()
-            self.presentViewController(vc, animated: true, completion: nil)
+        if user.exists == false{
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("login") as UIViewController
+            self.navigationController?.presentViewController(vc, animated: false, completion:nil)
         }
 
     }
