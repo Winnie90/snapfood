@@ -17,6 +17,7 @@
 		83F120541A3CDE6F007E6E28 /* TakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F120531A3CDE6F007E6E28 /* TakeViewController.swift */; };
 		83F6B5521A5325BA00050220 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6B5511A5325BA00050220 /* ImageTableViewController.swift */; };
 		83F6B5581A5329B600050220 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6B5571A5329B600050220 /* User.swift */; };
+		83F6B55A1A533A3300050220 /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6B5591A533A3300050220 /* UIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		83F120531A3CDE6F007E6E28 /* TakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeViewController.swift; sourceTree = "<group>"; };
 		83F6B5511A5325BA00050220 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
 		83F6B5571A5329B600050220 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		83F6B5591A533A3300050220 /* UIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				83F120371A3CD6A8007E6E28 /* Main.storyboard */,
+				83F6B5591A533A3300050220 /* UIManager.swift */,
 				83F120351A3CD6A8007E6E28 /* LoginViewController.swift */,
 				83F120531A3CDE6F007E6E28 /* TakeViewController.swift */,
 				83F6B5511A5325BA00050220 /* ImageTableViewController.swift */,
@@ -240,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F6B55A1A533A3300050220 /* UIManager.swift in Sources */,
 				83F6B5521A5325BA00050220 /* ImageTableViewController.swift in Sources */,
 				83F120361A3CD6A8007E6E28 /* LoginViewController.swift in Sources */,
 				83F6B5581A5329B600050220 /* User.swift in Sources */,

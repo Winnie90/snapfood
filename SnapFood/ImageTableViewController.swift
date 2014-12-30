@@ -12,12 +12,8 @@ class ImageTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let user = User()
-        if user.exists == false{
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewControllerWithIdentifier("login") as UIViewController
-            self.navigationController?.presentViewController(vc, animated: false, completion:nil)
+        if User().exists == false{
+            UIManager.sharedInstance.logout(navigationController!)
         }
-
     }
 }
