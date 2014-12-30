@@ -15,6 +15,8 @@
 		83F1203E1A3CD6A8007E6E28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83F1203C1A3CD6A8007E6E28 /* LaunchScreen.xib */; };
 		83F1204A1A3CD6A8007E6E28 /* SnapFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F120491A3CD6A8007E6E28 /* SnapFoodTests.swift */; };
 		83F120541A3CDE6F007E6E28 /* TakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F120531A3CDE6F007E6E28 /* TakeViewController.swift */; };
+		83F6B5521A5325BA00050220 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6B5511A5325BA00050220 /* ImageTableViewController.swift */; };
+		83F6B5581A5329B600050220 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6B5571A5329B600050220 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		83F120481A3CD6A8007E6E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83F120491A3CD6A8007E6E28 /* SnapFoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapFoodTests.swift; sourceTree = "<group>"; };
 		83F120531A3CDE6F007E6E28 /* TakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeViewController.swift; sourceTree = "<group>"; };
+		83F6B5511A5325BA00050220 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
+		83F6B5571A5329B600050220 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		83F1202D1A3CD6A8007E6E28 /* SnapFood */ = {
 			isa = PBXGroup;
 			children = (
+				83F6B5561A53262D00050220 /* Models */,
 				83F120301A3CD6A8007E6E28 /* AppDelegate.swift */,
 				83F120551A3CDE79007E6E28 /* UI */,
 				83F1203A1A3CD6A8007E6E28 /* Images.xcassets */,
@@ -122,8 +127,17 @@
 				83F120371A3CD6A8007E6E28 /* Main.storyboard */,
 				83F120351A3CD6A8007E6E28 /* LoginViewController.swift */,
 				83F120531A3CDE6F007E6E28 /* TakeViewController.swift */,
+				83F6B5511A5325BA00050220 /* ImageTableViewController.swift */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		83F6B5561A53262D00050220 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83F6B5571A5329B600050220 /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F6B5521A5325BA00050220 /* ImageTableViewController.swift in Sources */,
 				83F120361A3CD6A8007E6E28 /* LoginViewController.swift in Sources */,
+				83F6B5581A5329B600050220 /* User.swift in Sources */,
 				83F120311A3CD6A8007E6E28 /* AppDelegate.swift in Sources */,
 				83F120341A3CD6A8007E6E28 /* SnapFood.xcdatamodeld in Sources */,
 				83F120541A3CDE6F007E6E28 /* TakeViewController.swift in Sources */,
@@ -354,9 +370,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SnapFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -364,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SnapFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +442,7 @@
 				83F1204F1A3CD6A8007E6E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83F120501A3CD6A8007E6E28 /* Build configuration list for PBXNativeTarget "SnapFoodTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +451,7 @@
 				83F120521A3CD6A8007E6E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
